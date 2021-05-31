@@ -1,0 +1,18 @@
+button{
+    span.p-button-icon{
+        display: none;
+    }
+}
+
+button.p-button-loading{
+    span.p-button-icon{
+        display: block;
+    }
+}
+
+.hidden{
+	display: none;
+	*{
+		display: none;
+	}
+}

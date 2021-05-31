@@ -1,0 +1,71 @@
+/*fonts*/
+$font-color:#31355C !important;
+$font-color-light: #F4F7FD !important;
+$font-color-light-hover: #d7e4fd !important;
+$paragraph-color: #7E819F !important;
+
+/*colors*/
+$primary-color: #220533 !important;
+$primary-hover:#DF570A !important;
+$primary-focus:#f65a0000 !important;
+$primary-light:#FFF0E8 !important;
+$primary-light-hover:#fad8c6 !important;
+$secondary-color:#2A8BF2 !important;
+$secondary-hover:#147AE7 !important;
+$secondary-focus:#f65a0000 !important;
+$light-color:#E4EAF7 !important;
+$light-hover:#CCD8F1 !important;
+$light-focus:#e4eaf700 !important;
+
+$white-color:#FFFFFF;
+$muted-color: #C3C5D2;
+/*faltan  definir los hover and focus*/
+$success-color:#59D45C !important;
+$success-hover:#afffb0 !important;
+$success-focus:#59D45C !important;
+$success-light:#CEFFCF !important;
+$success-font: #189F1B !important;
+$info-color:#2AC4F2 !important;
+$info-hover:#2AC4F2 !important;
+$info-focus:#2AC4F2 !important;
+$warning-color:#FFD507 !important;
+$warning-light:#fff4be !important;
+$warning-hover:#FFD507 !important;
+$warning-focus:#FFD507 !important;
+$help-color:#9C27B0 !important;
+$help-hover:#9C27B0 !important;
+$help-focus:#9C27B0 !important;
+$danger-color:#F13C46 !important;
+$danger-light:#F8E9EA !important; /* F74751 */
+$danger-hover:#D03F47 !important;
+$danger-focus:#F74751 !important;
+
+/*inputs*/
+
+$input-label:#31355C !important;
+$input-border:1px solid #D4DDEB;
+$input-border-hover: 1px solid #7E819F !important;
+$input-border-focus: 1px solid #7E819F !important;
+$input-border-invalid: 1px solid #F13C46 !important;
+$input-background: #FFFFFF !important;
+$input-color:#7E819F !important;
+$input-box-shadow:0 0 0 0.2rem #7e819f1a !important;
+$input-background:#FFFFFF;
+$input-background-disabled: #F9FBFF !important;
+
+
+/** table  */
+$table-thead-background-color: #FFFFFF !important;
+$table-thead-color: $font-color;
+$table-tbody-color: $paragraph-color;
+$table-tbody-tr-hover :#F7F9FF;
+
+$section-separator:#DFE6F4;
+$font-primary-color :$primary-color;
+
+/*variables*/
+$title-base-font-size: 36px;
+$title-scale-drop: 6px;   
+
+
+

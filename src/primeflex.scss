@@ -1,0 +1,20 @@
+$sm:600px !default;
+$md:900px !default;
+$lg:1200px !default;
+$xl:1700px !default;
+$gutter:.5rem !default;
+
+$fieldMargin: 1rem !default;
+$fieldLabelMargin: .5rem !default;
+$helperTextMargin: .25rem !default;
+
+$spacer:1rem !default;
+
+/*@import '/node_modules/primeflex/src/_variables';*/
+@import 'node_modules/primeflex/src/_grid';
+@import 'node_modules/primeflex/src/_formlayout';
+@import 'node_modules/primeflex/src/_display';
+@import 'node_modules/primeflex/src/_text';
+@import 'node_modules/primeflex/src/flexbox/_flexbox';
+@import 'node_modules/primeflex/src/_spacing';
+@import 'node_modules/primeflex/src/_elevation';

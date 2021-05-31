@@ -1,0 +1,56 @@
+<div class="p-d-flex p-justify-center" id="signup-container">
+    <div class="p-col p-md-4 p-m-0" id="login-form">
+        <div class="p-grid p-fluid p-mx-2 p-ai-center" style="height:100%;">
+            <form [formGroup]="form" class="p-col-12">
+                <img src="assets/img/login/vector.png" alt="" id="vector">
+                <div class="p-col-12">
+                    <img src="assets/img/logo.png" alt="" id="login-logo" class="p-text-center">
+                </div>
+                <div class="p-col-12 p-p-0">
+                    <h2 class="p-text-center p-my-1">Nuevo destinatario</h2>
+                </div>
+                <div class="p-col-12 p-p-0">
+                    <p class="p-text-center"><small>Agrega un nuevo destinatario</small></p>
+                </div>
+                <div class="p-col-12 p-field p-mb-0">
+                    <label for="name">Nombre</label>
+                    <input id="name" type="text" formControlName="name" required pInputText placeholder="Nombre">
+                </div>
+                <div class="p-col-12 p-field p-mb-0">
+                    <label for="rut">RUT</label>
+                    <input id="rut" type="rut" formControlName="rut" required pInputText placeholder="RUT">
+                </div>
+                <div class="p-col-12 p-field p-mb-0">
+                    <label for="email">Correo electrónico</label>
+                    <input id="email" type="email" formControlName="email" required pInputText placeholder="Correo Electrónico">
+                </div>
+                <div class="p-col-12 p-field p-mb-0">
+                    <label for="phone">Número de teléfono</label>
+                    <input id="phone" type="phone" formControlName="phone" required pInputText placeholder="Número de teléfono">
+                </div>
+                <div class="p-col-12 p-field p-mb-0">
+                    <label for="destinationBank">Banco de destino</label>
+                    <p-dropdown formControlName="destinationBank" [options]="banks" placeholder="Seleccionar Banco" dataKey="id" optionLabel="name"></p-dropdown>
+                </div>
+                <div class="p-col-12 p-field p-mb-0">
+                    <label for="accountType">Tipo de cuenta</label>
+                    <p-dropdown formControlName="accountType" [options]="accountTypes" placeholder="Seleccionar tipo de cuenta" dataKey="_id" optionLabel="name"></p-dropdown>
+                </div>
+                <div class="p-col-12 p-field p-mb-0">
+                    <label for="accountNumber">Número de cuenta</label>
+                    <input id="accountNumber" type="accountNumber" formControlName="accountNumber" required pInputText placeholder="Número de cuenta">
+                </div>
+                <div class="p-col-12">
+                    <submit-button [loading]="loading" [label]="submitButtonLabel" (click)="submit()"></submit-button>
+                </div>
+            </form> 
+        </div>   
+    </div>
+    <div class="p-col-12 p-md-8 p-p-0" id="login-img-container">
+        <button pButton [routerLink]="['/public', 'recipients']" type="button" label="Nuevo Destinatario" class="p-button-secondary" style="margin-right: 5px;"></button>
+        <button pButton [routerLink]="['/public', 'transactions']" type="button" label="Nueva Transferencia" class="p-button-secondary" style="margin-right: 5px;"></button>
+        <button pButton [routerLink]="['/public', 'history']" type="button" label="Historial" class="p-button-secondary" style="margin-right: 5px;"></button>
+        <img src="assets/img/login/login.jpg" alt="" id="login-img">
+    </div>
+    <p-toast position="top-center"></p-toast> 
+</div>

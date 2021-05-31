@@ -1,0 +1,8 @@
+<button pButton [type]="type" [label]="_label" [ngClass]="loadingClass()" [class]="isCircleClass ? 'c-circle-button' : buttonClass" [disabled]="disablingClass()" style="justify-content: center;">
+	<div *ngIf="!isCircleClassWithLoading()">
+		<span class="p-button-icon" [ngClass]="isCircleClass ? loader : loader + ' ' + _iconPos" aria-hidden="true"></span>
+	</div>
+	<div *ngIf="isCircleClassWithLoading()">
+		<span  class="p-button-icon" [ngClass]="circleIcon" aria-hidden="true"></span>
+	</div>
+</button>

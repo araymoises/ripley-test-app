@@ -1,0 +1,60 @@
+#vector{
+    position: absolute;
+    top: -123px;
+    left: 0px;
+    z-index: -1;
+}
+#login-logo{
+    width: 80px;
+    margin: 0 auto;
+    display: block;
+}
+#login-img{
+    display: block;
+    overflow: hidden !important;
+}
+
+#login-img-container{
+    position:relative;
+    overflow: hidden;
+}
+#signup-container{
+    position: absolute;
+    top:0;
+    bottom:0;
+    right:0;
+    left:0;
+    overflow:hidden;
+    margin:0;
+    height: 100%;
+    min-height: 100%;
+}
+#login-form{
+    position: relative;
+    height: 100%;
+    overflow-y: auto;
+}
+@media screen and (max-width: 900px) {
+    #login-img-container{
+        max-width: 100%;
+        max-height: 150px;
+        overflow: hidden;   
+    }
+    #login-img{
+        display: none;
+        width: 100%;
+           
+    }
+    #login-img-container{
+        max-width: 0;
+        max-height: 0
+    }
+}
+
+.made-in{
+    & small{
+        img{
+            height: 15px !important;
+        }
+    }
+}
